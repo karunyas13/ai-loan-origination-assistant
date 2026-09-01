@@ -1,10 +1,23 @@
 # Impact Analysis
 
+## Document Context
+
+**Typical Real-Project Location:** Confluence / SharePoint / Excel Impact Assessment / Change Request / Requirements Repository  
+**Typical Ownership:** Business Analyst, with input from Business SMEs, Product Owner, Solution / Technical Teams, QA and Project Manager  
+**Primary Users:** Business Analyst, Product Owner, Project Manager, Business SMEs, Development, QA, Data / Reporting and Control Stakeholders  
+**Artifact Type:** Business analysis working artifact / change-impact assessment
+
+**Purpose:** Assesses how the proposed TO-BE solution affects business processes, people, technology, data, integrations, reporting, controls, testing and operations before implementation.
+
+> **Real-Project Note:** Impact Analysis is a common Business Analysis activity, particularly for transformation projects and requirement changes. It does not always exist as a standalone document. Depending on the organization, impact analysis may be maintained within a Change Request, BRD, Jira / Azure DevOps item, Confluence page, Excel workbook or solution-impact assessment. This portfolio maintains it separately to demonstrate the analysis clearly.
+
+---
+
 ## 1. Purpose
 
-This document assesses the impact of the proposed TO-BE Loan Origination Process across business processes, stakeholders, technology, data, integrations, reporting, controls, testing, operations, and AI governance.
+This analysis assesses the impact of moving from the **AS-IS Loan Origination Process** to the proposed **TO-BE Loan Origination Process**.
 
-The Impact Analysis builds on:
+It builds on:
 
 - Project Charter and Business Problem
 - Stakeholder Analysis
@@ -12,74 +25,93 @@ The Impact Analysis builds on:
 - TO-BE Loan Origination Process
 - Gap Analysis
 
-The objective is to understand what must change to move from the current state to the proposed future state and identify the areas requiring detailed business and functional requirements.
+The objective is to understand what will be affected by the proposed changes before those changes are implemented.
+
+The analysis considers impacts across:
+
+- Business processes
+- Stakeholders and roles
+- Technology
+- Data
+- Integrations
+- Reporting
+- Controls
+- Testing
+- Operations
+- AI governance
 
 ---
 
-# 2. Impact Analysis Objectives
+## 2. Impact Analysis Objectives
 
-The objectives of this analysis are to:
+The objectives are to:
 
 1. Identify business areas affected by the proposed solution.
 2. Assess changes to existing processes and responsibilities.
-3. Identify new system capabilities.
-4. Identify data and integration impacts.
-5. Identify reporting and KPI impacts.
-6. Identify operational and control impacts.
-7. Identify testing requirements.
-8. Identify AI-related governance and human-review impacts.
-9. Support requirement prioritization.
-10. Provide traceability between gaps and future requirements.
+3. Identify new or modified system capabilities.
+4. Identify data impacts.
+5. Identify integration impacts.
+6. Identify reporting and KPI impacts.
+7. Identify operational and control impacts.
+8. Identify testing implications.
+9. Identify training and readiness considerations.
+10. Identify AI-related governance and human-review impacts.
+11. Support prioritization and delivery planning.
+12. Support requirement-change analysis.
+13. Establish traceability between identified gaps and requirements.
+
+> **BA Principle:** Impact Analysis helps the project understand the consequences of a proposed change. The BA facilitates the analysis, but technical, operational, control and delivery impacts should be validated with the appropriate SMEs rather than determined by the BA alone.
 
 ---
 
-# 3. Impact Categories
-
-The proposed changes are assessed across the following categories:
+## 3. Impact Categories
 
 | Impact Category | Description |
 |---|---|
-| Process | Changes to loan origination activities, workflows and handoffs |
+| Process | Changes to loan-origination activities, workflows and handoffs |
 | People / Roles | Changes to responsibilities, ownership and user activities |
-| Technology | New or modified system functionality |
-| Data | Changes to data capture, validation, storage and history |
-| Integration / API | Changes involving external or internal system interfaces |
-| Reporting | New KPIs, dashboards and operational reporting |
+| Technology | New or modified application/system functionality |
+| Data | Changes to data capture, validation, storage, history or usage |
+| Integration / API | Changes involving internal or external interfaces |
+| Reporting | Changes to KPIs, dashboards and operational reporting |
 | Controls | Changes to authorization, auditability and business controls |
-| Testing | Testing required to validate the proposed changes |
+| Testing | Testing required to validate proposed changes |
 | Operations | Changes to queues, exception handling and daily processing |
-| AI Governance | Controls required for AI-assisted capabilities |
+| Training / Readiness | User guidance, training and implementation-readiness considerations |
+| AI Governance | Controls and oversight required for AI-assisted capabilities |
 
 ---
 
-# 4. Impact Rating
+## 4. Impact Rating
 
-The following rating scale is used:
+The following qualitative scale is used for the portfolio assessment:
 
 | Rating | Definition |
 |---|---|
-| High | Significant process, system, data or control change |
-| Medium | Moderate change requiring configuration, training or testing |
-| Low | Limited change with minimal operational impact |
+| High | Significant change affecting major process, system, data, operational or control areas |
+| Medium | Moderate change requiring configuration, coordination, testing or user adjustment |
+| Low | Limited change with relatively small operational or implementation impact |
+
+> **Real-Project Note:** Organizations may use different impact-scoring methods, including High / Medium / Low, numerical scoring, risk matrices or formal change-assessment criteria.
 
 ---
 
-# 5. Overall Gap Impact Summary
+## 5. Overall Gap Impact Summary
 
-| Gap ID | Change Area | Primary Impact Categories | Impact Level |
-|---|---|---|---|
-| GAP-001 | Application Completeness | Process, Technology, Data, Testing | High |
-| GAP-002 | Document Management | Process, Technology, Data, Operations | High |
-| GAP-003 | Data Validation | Technology, Data, Testing | High |
-| GAP-004 | Business Rules | Process, Technology, Controls, Testing | High |
-| GAP-005 | Exception Management | Process, People, Technology, Operations | High |
-| GAP-006 | Workflow & Handoffs | Process, People, Integration | Medium |
-| GAP-007 | Status Visibility | Process, Technology, Data, Reporting | High |
-| GAP-008 | Underwriting Review | Process, People, Technology, AI Governance | High |
-| GAP-009 | Rework Management | Process, Operations, Reporting | Medium |
-| GAP-010 | KPI & Reporting | Data, Reporting, Technology | Medium |
-| GAP-011 | Approval Conditions | Process, Technology, Data, Controls | High |
-| GAP-012 | End-to-End Traceability | Process, Controls, Testing, Governance | High |
+| Impact ID | Gap ID | Change Area | Primary Impact Categories | Impact Level |
+|---|---|---|---|---|
+| IMP-001 | GAP-001 | Application Completeness | Process, Technology, Data, Testing | High |
+| IMP-002 | GAP-002 | Document Management | Process, Technology, Data, Operations | High |
+| IMP-003 | GAP-003 | Data Validation | Technology, Data, Testing | High |
+| IMP-004 | GAP-004 | Business Rules | Process, Technology, Controls, Testing | High |
+| IMP-005 | GAP-005 | Exception Management | Process, People, Technology, Operations | High |
+| IMP-006 | GAP-006 | Workflow & Handoffs | Process, People, Integration | Medium |
+| IMP-007 | GAP-007 | Status Visibility | Process, Technology, Data, Reporting | High |
+| IMP-008 | GAP-008 | Underwriting Review | Process, People, Technology, AI Governance | High |
+| IMP-009 | GAP-009 | Rework Management | Process, Operations, Reporting | Medium |
+| IMP-010 | GAP-010 | KPI & Reporting | Data, Reporting, Technology | Medium |
+| IMP-011 | GAP-011 | Approval Conditions | Process, Technology, Data, Controls | High |
+| IMP-012 | GAP-012 | End-to-End Traceability | Process, Controls, Testing, Governance | High |
 
 ---
 
@@ -93,62 +125,57 @@ The following rating scale is used:
 
 ### Proposed Change
 
-Introduce guided application capture, mandatory-field validation and application completeness checks before submission.
+Introduce guided application capture, mandatory-field validation and application-completeness checks before submission.
 
-### Process Impact
+### Process Impact — High
 
-**High**
-
-The application-submission process changes because validation occurs earlier.
+The application-submission process changes because repeatable completeness validation occurs earlier.
 
 Incomplete applications should remain in Draft or require correction before successful submission where applicable.
 
-### People / Role Impact
+### People / Role Impact — Medium
 
-**Medium**
+Loan Applicants and Loan Officers receive earlier validation feedback.
 
-Loan applicants and loan officers receive earlier validation feedback.
+Loan Operations should receive fewer incomplete applications requiring downstream follow-up.
 
-Operations teams should receive fewer incomplete applications.
+### Technology Impact — High
 
-### Technology Impact
-
-**High**
-
-The solution requires:
+The solution requires capabilities for:
 
 - Mandatory-field configuration
 - Validation messages
-- Completeness calculation
+- Completeness checks
 - Draft functionality
 - Submission controls
 
-### Data Impact
+### Data Impact — Medium
 
-**Medium**
+Application data requires defined:
 
-Application fields require defined:
-
-- Mandatory/optional indicators
+- Mandatory / optional indicators
 - Data types
-- Validation rules
 - Allowed values
+- Validation requirements
 
-### Testing Impact
+### Testing Impact — High
 
-**High**
-
-Testing must cover:
+Testing should cover:
 
 - Complete applications
 - Missing mandatory information
 - Invalid values
 - Draft applications
+- Submission validation
 - Successful submissions
 
 ### Expected Outcome
 
 Reduced incomplete applications and downstream rework.
+
+### Primary Requirement Traceability
+
+**BR-001 — Application Capture and Completeness**
 
 ---
 
@@ -160,25 +187,19 @@ Reduced incomplete applications and downstream rework.
 
 ### Proposed Change
 
-Introduce centralized document requirements and document-status tracking.
+Introduce structured document requirements and document-status tracking.
 
-### Process Impact
+### Process Impact — High
 
-**High**
+Required documents are identified earlier and tracked throughout the relevant stages of the lifecycle.
 
-Document requirements are identified earlier and tracked throughout the lifecycle.
-
-### People / Role Impact
-
-**Medium**
+### People / Role Impact — Medium
 
 Applicants receive clearer document requirements.
 
-Loan officers and operations users gain visibility into outstanding documents.
+Loan Officers and Loan Operations gain improved visibility into outstanding and rejected documents.
 
-### Technology Impact
-
-**High**
+### Technology Impact — High
 
 The solution requires:
 
@@ -187,38 +208,47 @@ The solution requires:
 - Missing-document identification
 - Replacement tracking
 - Document history
+- Verification results
 
-### Data Impact
+### Data Impact — High
 
-**High**
-
-New data elements may include:
+Relevant data may include:
 
 - Document ID
 - Application ID
-- Document Type
-- Required Indicator
-- Document Status
-- Received Date
-- Verification Date
-- Rejection Reason
-- Replacement Indicator
+- Document type
+- Required indicator
+- Document status
+- Received date
+- Verification date
+- Rejection reason
+- Replacement indicator
 
-### Operations Impact
+Final field definitions will be validated during data analysis.
 
-**High**
+### Operations Impact — High
 
-Operations teams move from manual follow-up tracking toward structured document queues and statuses.
+Loan Operations moves from primarily manual follow-up toward structured document tracking and work queues.
 
-### Testing Impact
+### Testing Impact — High
 
-**High**
+Testing should cover:
 
-Testing should cover document requirements, missing documents, replacements, rejection and verification.
+- Required-document determination
+- Missing documents
+- Document receipt
+- Rejected documents
+- Replacement documents
+- Document verification
+- Document completeness
 
 ### Expected Outcome
 
 Improved document completeness and reduced processing delays.
+
+### Primary Requirement Traceability
+
+**BR-003 — Document Requirement and Tracking**
 
 ---
 
@@ -230,50 +260,58 @@ Improved document completeness and reduced processing delays.
 
 ### Proposed Change
 
-Introduce standardized automated validation for repeatable application-data checks.
+Introduce standardized validation for repeatable application-data checks.
 
-### Technology Impact
+### Technology Impact — High
 
-**High**
-
-Validation logic must support:
+Validation capabilities should support applicable:
 
 - Mandatory-field validation
 - Data-type validation
 - Range validation
 - Cross-field validation
 - Consistency checks
-- Reason codes
+- Validation reason codes
 
-### Data Impact
+### Data Impact — High
 
-**High**
+Data definitions and validation rules must be clearly defined.
 
-Data definitions and validation rules must be standardized.
+Data-analysis activities will establish:
 
-A Data Dictionary will be required.
+- Field definitions
+- Data types
+- Allowed values
+- Mandatory indicators
+- Validation rules
+- Source information where applicable
 
-### Process Impact
+### Process Impact — Medium
 
-**Medium**
+Errors are identified earlier rather than relying primarily on downstream manual review.
 
-Errors are identified earlier rather than during downstream manual review.
+### People / Role Impact — Medium
 
-### People / Role Impact
+Loan Operations should spend less time performing repetitive validation while retaining responsibility for cases requiring business judgment.
 
-**Medium**
+### Testing Impact — High
 
-Operations teams spend less time performing repetitive validation.
+Testing should include:
 
-### Testing Impact
-
-**High**
-
-Positive, negative and boundary-value scenarios will be required.
+- Positive scenarios
+- Negative scenarios
+- Boundary conditions
+- Missing values
+- Invalid formats
+- Cross-field inconsistencies
 
 ### Expected Outcome
 
-Improved data quality and reduced manual validation.
+Improved data quality and reduced repetitive manual validation.
+
+### Primary Requirement Traceability
+
+**BR-004 — Application Data Quality and Validation**
 
 ---
 
@@ -285,56 +323,64 @@ Improved data quality and reduced manual validation.
 
 ### Proposed Change
 
-Introduce a centralized Business Rules Catalogue and standardized decision logic.
+Introduce structured and traceable business-rule definitions and decision logic.
 
-### Process Impact
+### Process Impact — High
 
-**High**
+Eligibility and processing behavior becomes more consistently defined.
 
-Eligibility and processing decisions become more consistent and traceable.
+### Technology Impact — High
 
-### Technology Impact
+Relevant deterministic rules must be implemented or evaluated consistently by the solution.
 
-**High**
+### Data Impact — Medium
 
-The solution requires structured execution or evaluation of defined business rules.
+Inputs, outputs and reason codes associated with rules must be clearly defined.
 
-### Data Impact
+### Control Impact — High
 
-**Medium**
+Relevant rules require appropriate:
 
-Rule inputs and outputs must be clearly defined.
+- Ownership
+- Review
+- Change control
+- Effective/version information where applicable
+- Exception handling
+- Auditability
 
-### Control Impact
+### Testing Impact — High
 
-**High**
+Applicable rules require scenarios covering:
 
-Business-rule ownership, versioning, effective dates and exceptions must be controlled.
-
-### Testing Impact
-
-**High**
-
-Each business rule requires test scenarios covering:
-
-- Pass
-- Fail
+- PASS
+- FAIL
+- HARD_STOP
+- REVIEW_REQUIRED
 - Boundary conditions
-- Exceptions
 - Missing information
+- Exceptions
+- Error conditions where relevant
 
-### BA Deliverables Triggered
+### Supporting Analysis
 
-This impact creates the need for:
+Business-rule analysis may use:
 
 - Business Rules Catalogue
 - Decision Tables
-- Decision Trees where appropriate
-- Rule-to-requirement traceability
+- Decision Trees where useful
+- Process flows
+- Functional requirements
+- Acceptance criteria
+
+> **Real-Project Note:** These are analysis techniques and artifacts, not mandatory separate documents. Decision logic may be embedded within functional specifications, Confluence, rules-engine specifications or backlog items.
 
 ### Expected Outcome
 
-Consistent and testable business-rule execution.
+More consistent, traceable and testable business-rule behavior.
+
+### Primary Requirement Traceability
+
+**BR-005 — Eligibility and Business Rule Management**
 
 ---
 
@@ -348,59 +394,69 @@ Consistent and testable business-rule execution.
 
 Introduce structured identification, classification, routing and resolution of exceptions.
 
-### Process Impact
+### Process Impact — High
 
-**High**
+Exception handling becomes a defined workflow rather than relying primarily on informal coordination.
 
-Exception handling becomes a defined workflow rather than an informal activity.
+### People / Role Impact — High
 
-### People / Role Impact
-
-**High**
-
-Exception ownership must be defined across:
+Exception responsibilities may involve:
 
 - Loan Operations
-- KYC Team
+- KYC / Verification Team
 - Credit / Risk Team
 - Underwriters
 - Lending Approvers
+- Other authorized SMEs where applicable
 
-### Technology Impact
+Ownership depends on the exception type.
 
-**High**
+### Technology Impact — High
 
-The solution requires:
+The solution requires support for:
 
 - Exception categories
 - Reason codes
-- Priority/severity
+- Priority / severity where applicable
 - Assignment
 - Resolution status
 - Comments
 - History
+- Escalation
 
-### Operations Impact
+### Operations Impact — High
 
-**High**
+Structured work queues and exception-aging visibility may be required.
 
-Dedicated exception queues may be required.
+### Reporting Impact — Medium
 
-### Reporting Impact
+Operational reporting may include:
 
-**Medium**
+- Exception volume
+- Exception category
+- Exception aging
+- Resolution time
+- Outstanding exceptions
 
-Exception volumes, aging and resolution times should be measurable.
+### Testing Impact — High
 
-### Testing Impact
+Testing should verify:
 
-**High**
-
-Testing must verify routing, ownership, resolution and status behavior.
+- Exception creation
+- Categorization
+- Assignment
+- Routing
+- Blocking behavior
+- Resolution
+- History
 
 ### Expected Outcome
 
-Earlier exception resolution and clearer ownership.
+Earlier exception identification, clearer ownership and improved resolution tracking.
+
+### Primary Requirement Traceability
+
+**BR-007 — Exception Management**
 
 ---
 
@@ -412,48 +468,59 @@ Earlier exception resolution and clearer ownership.
 
 ### Proposed Change
 
-Introduce structured workflow routing and system integrations.
+Introduce structured workflow routing, work queues and relevant system integrations.
 
-### Process Impact
+### Process Impact — High
 
-**High**
+Applications move through defined stages with clearer ownership and routing.
 
-Applications move through defined stages and queues.
+### People / Role Impact — Medium
 
-### People / Role Impact
+Users increasingly work from assigned queues and defined workflow activities rather than relying primarily on manual coordination.
 
-**Medium**
+### Technology Impact — Medium
 
-Users work from assigned queues rather than relying primarily on manual coordination.
+Workflow and assignment capabilities are required.
 
-### Technology Impact
+### Integration Impact — High
 
-**Medium**
+Relevant integrations may include:
 
-Workflow configuration and assignment logic are required.
-
-### Integration Impact
-
-**High**
-
-APIs may support communication between:
-
-- KYC service
+- KYC / identity verification service
 - Document service
-- Credit / Risk service
-- AI review service
+- Credit / risk service
+- Business-rule service
+- AI-assisted review service
 - Notification service
+- Reporting flow
 - Downstream loan system
 
-### Operations Impact
+### Operations Impact — Medium
 
-**Medium**
+Queue ownership, escalation and fallback processes must be defined.
 
-Queue ownership and escalation processes must be defined.
+### Testing Impact — High
+
+Testing should validate:
+
+- Workflow routing
+- Assignment
+- Queue behavior
+- Integration success
+- Integration failure
+- Retry/fallback behavior where applicable
 
 ### Expected Outcome
 
-Reduced manual handoffs and improved turnaround time.
+Reduced manual coordination and improved processing visibility.
+
+### Primary Requirement Traceability
+
+**BR-008 — Workflow and Work Queue Management**
+
+Supporting requirement:
+
+**BR-019 — Integration Capability**
 
 ---
 
@@ -465,59 +532,73 @@ Reduced manual handoffs and improved turnaround time.
 
 ### Proposed Change
 
-Introduce a standardized application status model and controlled status transitions.
+Introduce consistent application statuses and controlled workflow progression.
 
-### Process Impact
+### Process Impact — High
 
-**High**
+Lifecycle stages have defined status behavior that reflects application progression.
 
-Each lifecycle stage receives defined statuses and transition rules.
+### Technology Impact — High
 
-### Technology Impact
-
-**High**
-
-The solution must manage:
+The solution must support:
 
 - Current status
-- Previous status
+- Previous status where required
 - Status date/time
-- Status reason
+- Status reason where applicable
 - Status history
-- Allowed transitions
+- Permitted workflow progression
 
-### Data Impact
+### Data Impact — High
 
-**High**
+Status-history information must be stored for operational visibility, reporting and audit purposes.
 
-Status-history data must be stored for audit and reporting.
+### Reporting Impact — High
 
-### Reporting Impact
+Status data supports:
 
-**High**
-
-Status data enables:
-
-- Pipeline reporting
+- Application pipeline reporting
 - Stage aging
 - Bottleneck analysis
 - Turnaround-time calculations
+- Queue reporting
 
-### Testing Impact
+### Testing Impact — High
 
-**High**
+Testing should verify:
 
-Every allowed and prohibited status transition should be tested.
+- Permitted progression
+- Prohibited progression
+- Status history
+- Status timestamps
+- Role restrictions where applicable
+- Exception/rework behavior
 
-### BA Deliverables Triggered
+### Supporting Analysis
 
-- Status Catalogue
-- Status Transition Matrix
-- Workflow Rules
+Status behavior may be represented through:
+
+- Functional requirements
+- Business rules
+- Process flows
+- Workflow diagrams
+- User stories and acceptance criteria
+- A status-transition table/matrix where complexity makes one useful
+
+> **Real-Project Note:** A standalone Status Catalogue or Status Transition Matrix is not inherently required. The information is often maintained within workflow requirements, functional specifications, state diagrams or delivery-tool acceptance criteria.
 
 ### Expected Outcome
 
 Improved lifecycle visibility and traceability.
+
+### Primary Requirement Traceability
+
+**BR-009 — Application Status Management**
+
+Relevant rules:
+
+- **RULE-026 — Permitted Status Transition**
+- **RULE-027 — Status History**
 
 ---
 
@@ -529,27 +610,21 @@ Improved lifecycle visibility and traceability.
 
 ### Proposed Change
 
-Provide a consolidated underwriting review view supported by controlled AI-assisted analysis.
+Provide a consolidated underwriting review experience supported by controlled AI-assisted analysis.
 
-### Process Impact
+### Process Impact — High
 
-**High**
+Underwriters receive relevant application information in a structured review experience before completing their assessment.
 
-Underwriters receive structured application information before completing their assessment.
+### People / Role Impact — High
 
-### People / Role Impact
+Underwriters retain responsibility for professional review and judgment.
 
-**High**
+Authorized lending personnel retain responsibility for final lending decisions.
 
-Underwriters remain responsible for professional judgment.
+### Technology Impact — High
 
-Authorized lending personnel remain responsible for final lending decisions.
-
-### Technology Impact
-
-**High**
-
-The solution requires a consolidated view of:
+The solution requires access to relevant:
 
 - Application information
 - KYC results
@@ -557,48 +632,63 @@ The solution requires a consolidated view of:
 - Validation results
 - Eligibility results
 - Business-rule outcomes
-- Risk indicators
+- Credit / risk indicators
 - Exceptions
-- AI-assisted summary
+- Supporting evidence
+- AI-assisted review output
 
-### AI Impact
+### AI Impact — High
 
-**High**
+The AI capability may support:
 
-The AI capability may:
+- Application summarization
+- Missing/incomplete-information observations
+- Summarization of recorded risk indicators
+- Summarization of existing exceptions
+- Retrieval of relevant approved rules/knowledge
+- Identification of possible conflicting information
+- Structured review output
 
-- Summarize application information
-- Highlight missing information
-- Highlight recorded exceptions
-- Retrieve relevant rule information
-- Organize risk indicators
-- Identify conflicting information
-- Generate structured review assistance
-
-### AI Governance Impact
-
-**High**
+### AI Governance Impact — High
 
 Controls must ensure:
 
 - No autonomous loan approval
 - No autonomous loan decline
+- No AI override of authorized human decisions
+- No AI replacement of deterministic business-rule results
 - Human review
 - Traceable AI output
 - Uncertainty handling
 - Supporting evidence where applicable
 - Audit history
-- Defined escalation
+- Human/manual fallback
+- Reviewer ability to accept, reject, correct or disregard AI observations
 
-### Testing Impact
+### Testing Impact — High
 
-**High**
+Testing should cover:
 
-Testing must cover both functional AI integration and human-control requirements.
+- AI integration behavior
+- Structured output
+- Missing information
+- Uncertainty handling
+- Human review
+- AI failure
+- Manual fallback
+- Audit logging
+- Prohibited autonomous actions
 
 ### Expected Outcome
 
-Reduced information-gathering effort while maintaining human lending authority.
+Reduced information-gathering effort while maintaining human lending authority and appropriate controls.
+
+### Primary Requirement Traceability
+
+- **BR-010 — Underwriting Review**
+- **BR-020 — AI-Assisted Application Review**
+- **BR-021 — AI Human Review and Override**
+- **BR-022 — AI Transparency and Traceability**
 
 ---
 
@@ -610,41 +700,46 @@ Reduced information-gathering effort while maintaining human lending authority.
 
 ### Proposed Change
 
-Move validation, completeness and exception identification earlier in the lifecycle.
+Move applicable completeness, validation and exception identification earlier in the lifecycle.
 
-### Process Impact
+### Process Impact — Medium
 
-**Medium**
+Issues should be identified and resolved closer to the stage where they originate.
 
-Issues should be resolved closer to the point where they originate.
+### Operations Impact — Medium
 
-### Operations Impact
+Reduced unnecessary backward movement between teams is expected.
 
-**Medium**
+Some rework will remain legitimate and must be supported rather than eliminated.
 
-Reduced backward movement between teams is expected.
+### Reporting Impact — Medium
 
-### Reporting Impact
-
-**Medium**
-
-Rework should be measured using defined reason codes and stage movements.
-
-### Data Impact
-
-**Medium**
-
-Rework events may require:
+Rework may be measured using:
 
 - Rework reason
 - Source stage
 - Destination stage
 - Date/time
 - Responsible team
+- Resolution time
+
+### Data Impact — Medium
+
+The solution may require structured rework information to support operational analysis.
 
 ### Expected Outcome
 
-Improved first-time-right processing.
+Improved first-time-right processing and better visibility into avoidable rework.
+
+### Primary Requirement Traceability
+
+This impact is cross-functional and relates primarily to:
+
+- **BR-001 — Application Capture and Completeness**
+- **BR-003 — Document Requirement and Tracking**
+- **BR-004 — Application Data Quality and Validation**
+- **BR-005 — Eligibility and Business Rule Management**
+- **BR-007 — Exception Management**
 
 ---
 
@@ -656,29 +751,23 @@ Improved first-time-right processing.
 
 ### Proposed Change
 
-Introduce structured KPI calculation and Power BI reporting.
+Introduce structured KPI calculation, validation and Power BI reporting.
 
-### Data Impact
+### Data Impact — High
 
-**High**
+Required reporting fields and lifecycle timestamps must be captured consistently.
 
-Required reporting fields must be captured consistently.
+### Technology Impact — Medium
 
-### Technology Impact
+The portfolio solution will use:
 
-**Medium**
+- **MySQL** for structured project data and KPI queries
+- **Microsoft Excel** for validation and reconciliation
+- **Microsoft Power BI** for dashboards and visual reporting
 
-MySQL will support structured project data and KPI queries.
+### Reporting Impact — High
 
-Microsoft Excel will support validation and reconciliation.
-
-Microsoft Power BI will provide dashboards and visual reporting.
-
-### Reporting Impact
-
-**High**
-
-Planned KPIs include:
+Planned KPI areas include:
 
 - Total Applications
 - Application Completion Rate
@@ -696,15 +785,28 @@ Planned KPIs include:
 - AI Review Volume
 - Human Escalation Rate
 
-### Testing Impact
+Detailed definitions, filters, business logic and calculation rules will be agreed during reporting analysis.
 
-**Medium**
+### Testing Impact — Medium
 
-KPI calculations must be reconciled against source data and SQL results.
+KPI calculations should be reconciled against source data and SQL results.
+
+Testing should include:
+
+- Calculation accuracy
+- Filters
+- Date ranges
+- Null handling
+- Duplicate handling
+- Reconciliation
 
 ### Expected Outcome
 
-Improved operational visibility and data-driven decision-making.
+Improved operational visibility and data-driven process management.
+
+### Primary Requirement Traceability
+
+**BR-017 — Operational KPI Reporting**
 
 ---
 
@@ -716,53 +818,72 @@ Improved operational visibility and data-driven decision-making.
 
 ### Proposed Change
 
-Introduce centralized tracking of approval conditions.
+Introduce structured tracking and control of approval conditions.
 
-### Process Impact
+### Process Impact — High
 
-**High**
+Conditions become formal workflow items between approval and downstream documentation/disbursement activities.
 
-Conditions become formal workflow items before documentation and disbursement.
+### Technology Impact — High
 
-### Technology Impact
+The solution requires:
 
-**High**
+- Condition creation
+- Assignment
+- Status tracking
+- Supporting information
+- Resolution
+- History
+- Waiver handling where permitted
 
-The solution requires condition creation, assignment, status and history.
+### Data Impact — High
 
-### Data Impact
-
-**High**
-
-Condition data may include:
+Condition information may include:
 
 - Condition ID
 - Application ID
-- Condition Type
+- Condition type
 - Description
 - Owner
 - Status
-- Required Date
-- Completion Date
-- Waiver Indicator
-- Waiver Authority
-- Resolution Notes
+- Required date
+- Completion date
+- Waiver indicator
+- Waiver authority
+- Resolution notes
 
-### Control Impact
+Detailed fields will be finalized during data analysis.
 
-**High**
+### Control Impact — High
 
-Only appropriately authorized users should waive controlled conditions.
+Only appropriately authorized personnel should waive controlled conditions.
 
-### Testing Impact
+Blocking conditions must prevent progression where the approved business rule requires it.
 
-**High**
+### Testing Impact — High
 
-Testing must ensure applications cannot proceed to disbursement while blocking conditions remain unresolved.
+Testing should cover:
+
+- Condition creation
+- Assignment
+- Satisfaction
+- Blocking conditions
+- Authorized waiver
+- Unauthorized waiver attempts
+- Documentation/disbursement readiness
 
 ### Expected Outcome
 
 Improved control over approval-to-disbursement readiness.
+
+### Primary Requirement Traceability
+
+**BR-013 — Approval Condition Management**
+
+Supporting requirements include:
+
+- **BR-014 — Loan Documentation Readiness**
+- **BR-015 — Disbursement Readiness**
 
 ---
 
@@ -774,37 +895,41 @@ Improved control over approval-to-disbursement readiness.
 
 ### Proposed Change
 
-Establish structured traceability across requirements, solution components and testing.
+Establish appropriate traceability across business needs, requirements, implementation items and testing.
 
-### Process Impact
+### Process Impact — Medium
 
-**Medium**
+Business Analysis, Development and Testing activities use consistent identifiers and relationships where appropriate.
 
-BA, development and testing activities must use consistent requirement identifiers.
+### Control Impact — High
 
-### Control Impact
+Requirement changes should be assessed against impacted:
 
-**High**
+- Functional requirements
+- Business rules
+- Data requirements
+- Interfaces
+- Backlog items
+- Tests
+- UAT scenarios
+- Reporting
 
-Changes to requirements must be traceable to impacted functionality and tests.
+### Testing Impact — High
 
-### Testing Impact
+Testing should be traceable to applicable requirements or acceptance criteria where formal coverage is required.
 
-**High**
+### BA Impact — High
 
-Each test should trace back to applicable requirements and acceptance criteria.
-
-### BA Impact
-
-**High**
-
-The BA will maintain relationships between:
+The BA supports traceability between relevant items such as:
 
 - Pain Points
 - Gaps
+- Impacts
 - Business Requirements
 - Functional Requirements
+- System Requirements
 - Business Rules
+- Decision Logic
 - User Stories
 - Acceptance Criteria
 - Data Requirements
@@ -812,9 +937,26 @@ The BA will maintain relationships between:
 - Test Scenarios
 - UAT Test Cases
 
+### Traceability Mechanism
+
+Depending on the project, traceability may be maintained through:
+
+- Requirements Traceability Matrix
+- Jira
+- Azure DevOps
+- Requirements-management platform
+- Test-management tool
+- Combination of linked delivery artifacts
+
+> **Real-Project Note:** A standalone RTM is not required on every Agile project. The required level of traceability depends on organizational governance, regulatory requirements, delivery methodology and tooling.
+
 ### Expected Outcome
 
 Improved requirement coverage and change-impact visibility.
+
+### Primary Requirement Traceability
+
+**BR-023 — Requirements Traceability**
 
 ---
 
@@ -823,21 +965,21 @@ Improved requirement coverage and change-impact visibility.
 | Stakeholder | Key Impact |
 |---|---|
 | Loan Applicant | Guided application, earlier validation, clearer document requirements and improved status visibility |
-| Loan Officer | Improved application tracking and reduced manual follow-up |
+| Loan Officer | Improved application tracking and reduced unnecessary manual follow-up |
 | KYC / Verification Team | Structured KYC workflow and exception handling |
-| Loan Operations Team | Automated validation, structured queues and improved visibility |
-| Credit / Risk Team | Standardized risk and exception information |
-| Underwriter | Consolidated review information and AI-assisted review |
-| Lending Approver | Structured decision information and clearer audit trail |
-| Documentation Team | Improved condition and documentation readiness visibility |
-| Disbursement Team | Standardized disbursement-readiness checks |
-| Product Owner | Requirement prioritization and business-rule ownership |
-| Business Analyst | Requirements, rules, traceability, impact analysis and UAT support |
-| Project Manager | Dependencies, risks, delivery planning and stakeholder coordination |
-| Development / Integration Team | Workflow, API, validation and system implementation |
-| QA / Testing Team | Increased requirement-based functional and integration testing |
-| Data / Reporting Team | Structured data and KPI reporting |
-| Risk / Compliance Team | Rule governance, auditability, decision controls and AI oversight |
+| Loan Operations Team | Earlier validation, structured queues, exception management and improved lifecycle visibility |
+| Credit / Risk Team | More structured risk, rule and exception information |
+| Underwriter | Consolidated review information and controlled AI-assisted support |
+| Lending Approver | Structured decision information, approval controls and improved audit history |
+| Documentation Team | Improved condition and documentation-readiness visibility |
+| Disbursement / Operations Team | Standardized disbursement-readiness information and controls |
+| Product Owner | Prioritization, scope and business-value decisions |
+| Business Analyst | Requirements analysis, clarification, impact analysis, traceability and UAT support |
+| Project Manager | Dependencies, risks, schedule and stakeholder coordination |
+| Development / Integration Team | Workflow, API, validation, data and system implementation impacts |
+| QA / Testing Team | Requirement-based functional, integration, negative and regression testing |
+| Data / Reporting Team | Structured data, KPI calculation and reporting requirements |
+| Risk / Compliance Team | Control, auditability, lending-decision and AI-governance impacts |
 
 ---
 
@@ -860,59 +1002,87 @@ The proposed solution introduces or strengthens data requirements for:
 - Status history
 - Disbursement information
 - Audit information
-- AI review information
+- AI-review information
 - KPI reporting
 
-Detailed field definitions will be maintained through the **Data Dictionary**.
+Detailed data analysis will define:
 
-Source-to-target movement will be documented through **Data Mapping**.
+- Business definitions
+- Field names
+- Data types
+- Allowed values
+- Mandatory/optional indicators
+- Validation rules
+- Source information
+- Target information where applicable
+- Transformation logic where applicable
+
+A **Data Dictionary** and **Data Mapping** may be used to represent these requirements.
+
+> **Real-Project Note:** Data dictionaries and mapping specifications are commonly maintained in Excel, Confluence, data-modeling tools or integration documentation depending on the organization.
 
 ---
 
 # 9. Integration Impact Summary
 
-The future-state design may require simulated APIs for:
+The future-state solution may require simulated interfaces for:
 
-1. KYC verification
+1. KYC / identity verification
 2. Document information
 3. Credit / risk information
 4. Business-rule processing
 5. AI-assisted review
 6. Notifications
-7. Downstream loan processing
+7. Reporting
+8. Downstream loan processing
 
-For each integration, later BA documentation will define:
+For each relevant interface, analysis should consider:
 
-- Endpoint
-- Method
+- Business purpose
+- Source and target
+- Trigger
+- Endpoint / operation where applicable
 - Request
 - Response
 - Mandatory fields
 - Validation
 - Error responses
-- Authentication assumption
+- Authentication assumptions
 - Timeout / failure handling
+- Retry/fallback behavior
 - Business impact of failure
+
+> **Real-Project Note:** The BA commonly defines and validates business/interface requirements with architects, developers and integration SMEs. Detailed technical API design is normally a collaborative technical responsibility rather than solely a BA deliverable.
 
 ---
 
 # 10. Reporting Impact Summary
 
-Reporting requirements will require structured lifecycle timestamps and outcome data.
+Reporting requires structured lifecycle timestamps, statuses and outcome data.
 
-The reporting solution will use:
+The portfolio implementation will use:
 
 - **MySQL** for structured data and SQL analysis
 - **Microsoft Excel** for validation and reconciliation
 - **Microsoft Power BI** for dashboards and visualization
 
-Reporting requirements will be traced to defined business KPIs.
+Reporting analysis will define:
+
+- KPI name
+- Business definition
+- Calculation
+- Source fields
+- Filters
+- Reporting frequency
+- Dimensions
+- Expected reconciliation
+- Business owner
 
 ---
 
 # 11. Control and Compliance Impact
 
-The proposed process requires controls around:
+The proposed process requires consideration of controls around:
 
 - User access
 - Role-based activities
@@ -920,57 +1090,98 @@ The proposed process requires controls around:
 - Business-rule changes
 - Exception resolution
 - Condition waivers
-- Decision recording
+- Lending-decision recording
+- Disbursement readiness
 - Audit history
 - Sensitive data handling
 - AI-assisted outputs
 - Human review
 
-The portfolio will demonstrate these controls conceptually without representing the policies of any specific financial institution.
+The Business Analyst documents relevant requirements and facilitates clarification.
+
+Applicable business, risk, compliance, security and technology stakeholders validate and approve controls according to organizational governance.
 
 ---
 
 # 12. Testing Impact
 
-The proposed changes require multiple levels of testing.
+The proposed changes require multiple forms of validation.
 
 ## Functional Testing
 
-Validate system functionality against requirements.
+Validate expected functionality against functional requirements and acceptance criteria.
 
 ## Business Rule Testing
 
-Validate rule conditions, outcomes and boundary scenarios.
+Validate applicable:
+
+- Conditions
+- Outcomes
+- Boundaries
+- Hard stops
+- Review-required scenarios
+- Exceptions
 
 ## Integration Testing
 
-Validate API requests, responses, errors and failure handling.
+Validate:
+
+- Requests
+- Responses
+- Errors
+- Timeouts
+- Failure handling
+- Data exchange
 
 ## Data Testing
 
-Validate mappings, mandatory fields, transformations and data quality.
+Validate:
+
+- Mappings
+- Mandatory fields
+- Data types
+- Transformations
+- Data quality
+- Reconciliation
 
 ## Workflow Testing
 
-Validate routing, queues and status transitions.
+Validate:
+
+- Routing
+- Queues
+- Assignment
+- Workflow progression
+- Prohibited progression
+- Rework paths
 
 ## Negative Testing
 
-Validate invalid inputs and prohibited actions.
+Validate invalid inputs, unauthorized activities and prohibited system behavior.
 
 ## Regression Testing
 
-Validate that changes do not negatively affect existing functionality.
+Confirm that implemented changes do not adversely affect previously working functionality.
 
-## UAT
+## User Acceptance Testing
 
-Business users validate that the solution meets agreed business requirements and supports expected business processes.
+Business users validate that the solution supports agreed business processes and requirements.
+
+The BA commonly supports UAT by:
+
+- Helping identify business scenarios
+- Clarifying expected outcomes
+- Supporting test-data preparation
+- Answering requirement questions
+- Supporting defect triage
+- Helping distinguish defects from requirement changes
+- Tracking business acceptance issues
 
 ---
 
 # 13. Training and Operational Readiness Impact
 
-The proposed solution may require training or guidance for:
+Potentially affected users include:
 
 - Loan Officers
 - Loan Operations
@@ -981,39 +1192,42 @@ The proposed solution may require training or guidance for:
 - Documentation Teams
 - Disbursement Teams
 
-Training topics may include:
+Potential training/readiness areas include:
 
 - New workflow
-- Application statuses
+- Application processing
 - Exception handling
 - Business-rule outcomes
 - Approval-condition tracking
 - Reporting
 - AI-assisted review
 - Human-review responsibilities
+- Fallback procedures
 
-Operational readiness will be assessed before implementation.
+> **Real-Project Note:** Training ownership varies by organization. The BA may provide process knowledge and support training-content preparation, while formal training may be owned by Change Management, Operations, Product or Learning teams.
 
 ---
 
 # 14. AI Governance Impact
 
-AI introduces additional governance requirements beyond traditional workflow automation.
+AI introduces additional considerations beyond traditional workflow automation.
 
-The proposed AI capability must follow these principles:
+The proposed AI capability follows these principles:
 
 1. AI provides decision support only.
 2. AI does not independently approve loans.
 3. AI does not independently decline loans.
-4. Authorized humans retain lending decision authority.
-5. AI output should be reviewable.
-6. Important observations should be supported by available information.
-7. Uncertain output should be identified or escalated.
-8. AI interactions should be auditable where appropriate.
-9. AI failures should not prevent authorized human processing.
-10. Human reviewers should be able to override or disregard AI-generated observations.
+4. AI does not override deterministic business-rule outcomes.
+5. Authorized humans retain final lending-decision authority.
+6. AI output must be reviewable.
+7. Relevant observations should be supported by available information.
+8. Uncertainty should result in appropriate human review.
+9. AI activity should be traceable where required.
+10. AI failure must not prevent authorized human processing.
+11. Human reviewers must be able to accept, reject, correct or disregard AI observations.
+12. Approved/controlled knowledge sources should be used for rule or policy retrieval where applicable.
 
-Detailed AI requirements, risks and controls will be documented later in the project.
+Detailed AI requirements and controls are addressed through the project's AI-related business, functional and system requirements.
 
 ---
 
@@ -1021,80 +1235,162 @@ Detailed AI requirements, risks and controls will be documented later in the pro
 
 | Risk | Potential Impact | Initial Mitigation |
 |---|---|---|
-| Incorrect business-rule configuration | Incorrect eligibility or workflow outcome | Rule review, versioning and testing |
-| Integration failure | Processing delays | Error handling and manual fallback |
-| Poor data quality | Incorrect validation/reporting | Data-quality rules and validation |
-| Incorrect status transitions | Workflow inconsistency | Status Transition Matrix and testing |
-| Unresolved conditions | Incorrect disbursement readiness | Blocking-condition controls |
-| User adoption issues | Operational inefficiency | Training and clear process documentation |
-| Incorrect AI output | Reviewer confusion or inappropriate reliance | Human review, evidence and AI controls |
-| Requirement changes | Scope, schedule and testing impact | Change control and RTM |
+| Incorrect business-rule configuration | Incorrect eligibility or workflow outcome | Rule review, controlled changes and testing |
+| Integration failure | Processing delays | Error handling, retry/fallback and operational procedures |
+| Poor data quality | Incorrect validation or reporting | Data-quality rules, validation and reconciliation |
+| Incorrect workflow progression | Processing inconsistency | Workflow requirements, business rules and testing |
+| Unresolved approval conditions | Incorrect readiness for downstream processing | Blocking-condition controls |
+| User-adoption issues | Operational inefficiency | Training, communication and process guidance |
+| Incorrect AI output | Reviewer confusion or inappropriate reliance | Human review, evidence, uncertainty handling and AI controls |
+| Requirement changes | Scope, schedule and testing impact | Impact analysis, prioritization and traceability |
 
-These risks will later be expanded in the project **RAID Log / Risk Register**.
+These risks can later be incorporated into the project **RAID Log / Risk Register** where appropriate.
 
 ---
 
 # 16. Requirements Impact
 
-The Impact Analysis identifies the need for detailed requirements covering:
+The Impact Analysis identifies the need for requirements across several areas.
 
-### Business Requirements
+## Business Requirements
 
-What business outcomes and capabilities are required.
+Define the business outcomes and capabilities required.
 
-### Functional Requirements
+## Functional Requirements
 
-How the proposed solution should behave.
+Define expected solution behavior.
 
-### System Requirements
+## System Requirements
 
-Technical and non-functional expectations.
+Define applicable system, technical and non-functional expectations.
 
-### Business Rules
+## Business Rules
 
-Conditions governing eligibility, validation, routing and processing.
+Define conditions governing validation, eligibility, routing, exceptions and processing.
 
-### Data Requirements
+## Data Requirements
 
-Required fields, definitions, mappings and quality controls.
+Define required data, definitions, validation, mappings and quality expectations.
 
-### Integration Requirements
+## Integration Requirements
 
-System-to-system interaction requirements.
+Define required system-to-system interactions and business behavior.
 
-### Reporting Requirements
+## Reporting Requirements
 
-KPIs, calculations and dashboard requirements.
+Define KPIs, calculations, dimensions and dashboard expectations.
 
-### AI Requirements
+## AI Requirements
 
-AI behavior, human review, limitations and governance.
+Define AI-assisted behavior, limitations, human review, fallback and governance.
 
-These requirements will be formally documented in subsequent artifacts.
+The detailed requirements are maintained in the project's requirements artifacts and delivery backlog.
 
 ---
 
 # 17. Traceability
 
-The current analysis establishes the following traceability:
+The initial analysis establishes:
 
-**Pain Point → Gap → Impact**
+```text
+Pain Point → Gap → Impact
+```
+
+For example:
+
+```text
+PP-01 → GAP-001 → IMP-001
+```
+
+The project has subsequently extended this relationship into detailed requirements.
 
 Example:
 
-`PP-01 → GAP-001 → IMP-001`
+```text
+PP-01
+  ↓
+GAP-001
+  ↓
+IMP-001
+  ↓
+BR-001
+  ↓
+FR-001–FR-006
+  ↓
+Relevant System Requirements
+  ↓
+Relevant Business Rules
+  ↓
+User Story / Acceptance Criteria
+  ↓
+Test / UAT
+  ↓
+Business Outcome / KPI
+```
 
-Future artifacts will extend this chain:
+Traceability is many-to-many. A single gap may result in multiple requirements, and a single requirement may address more than one business problem.
 
-`PP-01 → GAP-001 → IMP-001 → BR-001 → FR-xxx → US-xxx → AC-xxx → UAT-xxx`
-
-This structure will later be consolidated within the **Requirements Traceability Matrix (RTM)**.
+Detailed traceability will be maintained through the appropriate project traceability mechanism.
 
 ---
 
-# 18. BA Conclusion
+# 18. Requirement Change Impact Analysis
 
-The Impact Analysis shows that the proposed loan origination transformation affects more than system functionality.
+Impact Analysis is also used during delivery when an existing requirement changes.
+
+For example, assume a stakeholder requests:
+
+> "Allow an application with an unresolved approval condition to proceed to disbursement."
+
+The BA should not simply update the user story.
+
+The BA should analyze potential impact on:
+
+- Business rules
+- Approval-condition requirements
+- Disbursement-readiness requirements
+- Workflow behavior
+- User permissions
+- Data
+- API behavior
+- Existing test scenarios
+- UAT scenarios
+- Reporting
+- Controls
+- Documentation
+- Delivery estimate
+
+The BA then facilitates review with the appropriate business and control stakeholders before the change is accepted.
+
+This is one of the practical uses of Impact Analysis during an active project.
+
+---
+
+# 19. BA Activities Demonstrated
+
+This Impact Analysis demonstrates practical BA activities including:
+
+- Reviewing proposed process changes
+- Identifying impacted stakeholders
+- Assessing process impact
+- Assessing data impact
+- Identifying integration impact
+- Identifying reporting impact
+- Identifying operational impact
+- Identifying control impact
+- Identifying testing implications
+- Supporting prioritization
+- Supporting requirement-change analysis
+- Identifying downstream dependencies
+- Supporting traceability
+
+The BA facilitates the analysis and coordinates with SMEs rather than independently determining every technical, operational or compliance impact.
+
+---
+
+# 20. Outcome
+
+The Impact Analysis confirms that the proposed loan-origination transformation affects more than application functionality.
 
 The changes influence:
 
@@ -1105,10 +1401,14 @@ The changes influence:
 - Integrations
 - Reporting
 - Testing
-- Operational controls
+- Operations
+- Controls
+- Training/readiness
 - AI governance
 
-The results of this analysis will be used during requirements elicitation and requirements documentation to ensure that proposed changes are fully understood before solution implementation.
+The analysis provides context for the detailed requirements already established and will continue to support requirement-change assessment during delivery.
+
+> **Portfolio Representation:** This GitHub file represents impact-analysis work that, in an enterprise project, may be maintained within Confluence, Excel, a Change Request, a BRD, a requirements repository or a delivery-management tool.
 
 ---
 
@@ -1116,4 +1416,4 @@ The results of this analysis will be used during requirements elicitation and re
 
 This Impact Analysis represents a simulated loan origination transformation created for educational and professional portfolio purposes.
 
-It does not represent the internal processes, technology architecture, lending rules, regulatory interpretation, or policies of any specific financial institution.
+It does not represent the internal processes, technology architecture, lending rules, regulatory interpretation or policies of any specific financial institution.
