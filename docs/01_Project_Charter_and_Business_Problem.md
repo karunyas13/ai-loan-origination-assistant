@@ -1,5 +1,16 @@
 # Project Charter & Business Problem
 
+## Document Context
+
+**Typical Real-Project Location:** Confluence / SharePoint / Project Management Repository  
+**Typical Ownership:** Project Manager / Project Sponsor, with Business Analyst contribution  
+**Primary Users:** Project Sponsor, Product Owner, Business Analyst, Project Manager, Business and Technology Stakeholders  
+**Purpose:** Establishes the business problem, objectives, scope, stakeholders, assumptions, constraints, dependencies, risks, success criteria, and high-level project direction.
+
+> **Real-Project Note:** A Project Charter is typically created during project initiation and is commonly owned or coordinated by the Project Manager or Project Sponsor. The Business Analyst contributes to areas such as the business problem, scope, stakeholders, business needs, assumptions, dependencies, and success measures. The exact format and ownership vary by organization.
+
+---
+
 ## 1. Project Title
 
 **AI-Powered Loan Origination Requirements & Risk Assistant**
@@ -266,7 +277,7 @@ Detailed **AS-IS** and **TO-BE** process flows will be documented separately.
 - Stakeholder analysis
 - RACI matrix
 - RAID / Risk Log
-- Product backlog
+- Product backlog management
 - Sprint planning
 - Prioritization
 - Dependencies
@@ -354,14 +365,14 @@ Key project dependencies include:
 - Business requirements
 - Stakeholder requirements
 - Loan-product definition
-- Application status model
+- Application workflow and status requirements
 - KYC requirements
 - Document requirements
 - Eligibility rules
 - Business rules
 - Risk and exception rules
 - Underwriting requirements
-- Decision-status requirements
+- Decision requirements
 - Documentation requirements
 - Disbursement-readiness requirements
 - Synthetic dataset
@@ -378,16 +389,16 @@ Key project dependencies include:
 
 | Risk | Potential Impact | Proposed Mitigation |
 |---|---|---|
-| Incomplete requirements | Rework during development and testing | Conduct requirement reviews and maintain RTM |
+| Incomplete requirements | Rework during development and testing | Conduct requirement reviews and maintain traceability |
 | Unclear business rules | Inconsistent validation | Document rule logic and expected outcomes |
 | Poor data quality | Incorrect validation and reporting | Define data-quality rules and SQL checks |
 | Missing integration requirements | Process and system gaps | Maintain API specifications and data mappings |
-| Scope expansion | Project delays | Maintain scope, priorities and backlog |
-| Incorrect status transitions | Workflow inconsistencies | Define status-transition rules |
+| Scope expansion | Project delays | Maintain scope, priorities and product backlog |
+| Incorrect workflow behavior | Processing inconsistencies | Define workflow rules and expected system behavior |
 | Incorrect AI output | Misleading reviewer information | Validate outputs and require human review |
 | Over-reliance on AI | Increased decision risk | Keep lending decisions under human authority |
 | Limited AI explainability | Reduced reviewer confidence | Provide evidence, reason codes and audit information |
-| Missing traceability | Requirements may not be adequately tested | Maintain RTM from requirements through UAT |
+| Missing traceability | Requirements may not be adequately tested | Maintain requirements-to-test traceability |
 
 ---
 
@@ -399,10 +410,9 @@ The project will be considered successful when:
 - AS-IS and TO-BE processes are defined.
 - Business requirements are documented and traceable.
 - Functional and system requirements are defined.
-- Business rules are documented.
-- Application statuses and transitions are defined.
+- Business rules and applicable decision logic are documented.
 - User stories contain measurable acceptance criteria.
-- Requirements are mapped to UAT test cases through an RTM.
+- Requirements are traceable through testing and UAT.
 - MySQL supports the required lifecycle data.
 - Data mappings and API requirements are documented.
 - Power BI provides meaningful operational KPIs.
@@ -441,21 +451,34 @@ Detailed KPI definitions and calculations will be developed during the reporting
 
 The project will progressively include:
 
+### Business Analysis & Requirements
+
 - Project Charter & Business Problem
 - Stakeholder Analysis
 - Scope / Out of Scope
 - AS-IS Process
 - TO-BE Process
-- BRS
-- FRS
-- SRS
+- Gap Analysis
+- Impact Analysis
+- Requirements Elicitation & Analysis
+- Business Requirements Specification (BRS / BRD)
+- Functional Requirements Specification (FRS / FRD)
+- System Requirements Specification (SRS)
 - Business Rules
-- Application Status Values & Transitions
+- Decision Tables where applicable
+- Requirements Traceability Matrix (RTM)
+
+### Agile Delivery
+
+- Product Backlog / Sprint Delivery Artifacts (Jira / Azure DevOps representation)
 - User Stories
 - Acceptance Criteria
-- Gap Analysis
-- RTM
-- UAT Test Cases
+- Prioritization
+- Requirement Clarifications
+- Change / Impact Analysis
+
+### Data, Integration & Reporting
+
 - Data Dictionary
 - Data Mapping
 - MySQL Database
@@ -463,17 +486,37 @@ The project will progressively include:
 - KPI Queries
 - API Endpoint Specifications
 - API Request / Response Samples
+- Microsoft Excel validation and reconciliation artifacts
+- Microsoft Power BI Dashboard
+
+### Testing & UAT
+
+- Test Scenario Review
+- UAT Test Cases
+- Defect / Issue Tracking
+- Requirements-to-test traceability
+- UAT coordination and business validation
+
+### Project Management Support
+
 - RACI Matrix
 - RAID / Risk Log
-- Sprint / Backlog Plan
-- Microsoft Excel artifacts
-- Microsoft Power BI Dashboard
+- Dependencies
+- Project Status Reporting
+- Sprint / Release Coordination
+
+### AI-Assisted Review
+
 - AI Use Cases
 - RAG / Knowledge Retrieval Design
 - Prompt Design
+- Structured AI Outputs
 - Human Review Controls
 - AI Evaluation
-- AI Guardrails & Auditability
+- AI Guardrails
+- AI Auditability
+
+> **Real-Project Note:** These artifacts would not necessarily exist as separate documents in every organization. Depending on the delivery model, they may be maintained across Confluence, SharePoint, Jira, Azure DevOps, requirements-management tools, test-management tools, Excel, API documentation platforms, source-control repositories, and reporting platforms.
 
 ---
 
@@ -481,9 +524,28 @@ The project will progressively include:
 
 **Status: In Development**
 
-**Current Phase: Phase 1 — Business Analysis Foundation**
+### Completed Analysis & Requirements Activities
 
-The next activities will establish the stakeholder model and AS-IS Loan Origination Process before detailed requirements are created.
+- Project Charter & Business Problem
+- Stakeholder Analysis
+- AS-IS Loan Origination Process
+- TO-BE Loan Origination Process
+- Gap Analysis
+- Impact Analysis
+- Requirements Elicitation & Analysis
+- Business Requirements Specification (BRS / BRD)
+- Functional Requirements Specification (FRS / FRD)
+- System Requirements Specification (SRS)
+- Business Rules Catalogue
+- Decision Tables
+
+### Current Stage
+
+**Requirements Analysis Complete — Preparing for Agile Delivery**
+
+The next stage will translate the established requirements and business rules into delivery-ready backlog items, including user stories and acceptance criteria.
+
+In a real Agile project, backlog items would typically be maintained in a delivery-management tool such as Jira or Azure DevOps rather than as standalone formal requirement documents.
 
 ---
 
